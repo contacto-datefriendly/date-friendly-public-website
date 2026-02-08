@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateFriendly - Menos Pantallas, Más Conexión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="heart" class="text-rose-500 fill-rose-500"></i>
+                    <span class="text-2xl font-bold tracking-tight text-gray-800">Date<span class="text-rose-500">Friendly</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#como-funciona" class="hover:text-rose-500 transition">Cómo funciona</a>
+                    <a href="#seguridad" class="hover:text-rose-500 transition">Seguridad</a>
+                    <a href="#" class="bg-rose-500 text-white px-5 py-2 rounded-full hover:bg-rose-600 transition">Descargar App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden bg-white pt-16 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Menos <span class="text-rose-500 underline">swiping</span>,<br> más conexión real.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    DateFriendly es la app diseñada para sacarte de casa. Conéctate con personas que están listas para una cita hoy mismo, en persona.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button class="flex items-center justify-center gap-2 bg-black text-white px-8 py-3 rounded-xl hover:opacity-80 transition">
+                        <i data-lucide="apple"></i> App Store
+                    </button>
+                    <button class="flex items-center justify-center gap-2 bg-gray-800 text-white px-8 py-3 rounded-xl hover:opacity-80 transition">
+                        <i data-lucide="play"></i> Google Play
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                <div class="w-64 h-64 bg-rose-200 absolute -top-10 -right-10 rounded-full blur-3xl opacity-50"></div>
+                <img src="https://images.unsplash.com/photo-1522327646852-4e28586a40dd?auto=format&fit=crop&w=800&q=80" alt="Pareja disfrutando un café" class="rounded-3xl shadow-2xl relative z-10 mx-auto w-4/5">
+            </div>
+        </div>
+    </header>
+
+    <section id="como-funciona" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-16">¿Por qué DateFriendly?</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="bg-rose-100 w-12 h-12 flex items-center justify-center rounded-lg mb-6 mx-auto">
+                        <i data-lucide="map-pin" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Citas Cercanas</h3>
+                    <p class="text-gray-500">Encuentra personas en tu zona listas para compartir un café o una cena ahora mismo.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="bg-rose-100 w-12 h-12 flex items-center justify-center rounded-lg mb-6 mx-auto">
+                        <i data-lucide="zap" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Adiós al Ghosting</h3>
+                    <p class="text-gray-500">Nuestro sistema prioriza a usuarios activos que prefieren la conversación real sobre el chat eterno.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="bg-rose-100 w-12 h-12 flex items-center justify-center rounded-lg mb-6 mx-auto">
+                        <i data-lucide="shield-check" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Seguridad Ante Todo</h3>
+                    <p class="text-gray-500">Perfiles verificados y puntos de encuentro sugeridos en lugares públicos y seguros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 hero-gradient text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Listo para tu próxima gran historia?</h2>
+            <p class="text-xl mb-10 opacity-90">Únete a miles de personas que ya están disfrutando de citas reales.</p>
+            <a href="#" class="inline-block bg-white text-rose-500 font-bold px-10 py-4 rounded-full text-lg shadow-xl hover:scale-105 transition">Comenzar Gratis</a>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="heart" class="text-rose-500"></i>
+                        <span class="text-xl font-bold">DateFriendly</span>
+                    </div>
+                    <p class="text-gray-500 max-w-sm">La aplicación de citas que prioriza los encuentros cara a cara en entornos seguros y amigables.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-gray-800">Legal</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="privacy/es-cl/privacidad.html" class="hover:text-rose-500 transition">Privacidad</a></li>
+                        <li><a href="terminos-y-condiciones/es-cl/terminos-y-condiciones.html" class="hover:text-rose-500 transition">Términos y Condiciones</a></li>
+                        <li><a href="#" class="hover:text-rose-500 transition">Política de Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-gray-800">Soporte</h4>
+                    <ul class="space-y-4 text-gray-500">
+                        <li><a href="#" class="hover:text-rose-500 transition">Ayuda</a></li>
+                        <li><a href="mailto:contacto@datefriendly.com" target="_blank" class="hover:text-rose-500 transition">Contacto</a></li>
+                        <li><a href="#" class="hover:text-rose-500 transition">Seguridad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">© 2025 DateFriendly Inc. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-rose-500"><i data-lucide="instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-rose-500"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-rose-500"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
