@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad de Menores - DateFriendly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="/" class="flex items-center gap-2">
+                    <img src="../../img/datefriendly_logo.png" alt="DateFriendly Logo" class="h-8 w-auto">
+                    <span class="text-2xl font-bold tracking-tight text-gray-800">Date<span class="text-rose-500">Friendly</span></span>
+                </a>
+                <a href="/" class="text-gray-500 hover:text-rose-500 text-sm font-medium flex items-center gap-1">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-12 border-b border-gray-100 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Seguridad de Menores y Tolerancia Cero</h1>
+            <p class="text-gray-500">Nuestro compromiso con una comunidad segura.</p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+            
+            <div class="p-8 border-b border-gray-100">
+                <div class="flex gap-4">
+                    <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">Edad Mínima Requerida</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            El uso de DateFriendly está estrictamente limitado a personas <strong>mayores de 18 años</strong>. Verificamos la edad de nuestros usuarios y no permitimos el acceso a menores de edad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 border-b border-gray-100">
+                <div class="flex gap-4">
+                    <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="shield-ban" class="w-5 h-5"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">Tolerancia Cero con Contenido de Explotación Infantil</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tenemos una política de <strong>tolerancia cero</strong> ante cualquier forma de material de abuso sexual infantil (CSAM/CSAE). Cualquier cuenta que comparta o promueva este tipo de contenido será eliminada permanentemente y reportada a las autoridades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 border-b border-gray-100">
+                <div class="flex gap-4">
+                    <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="flag" class="w-5 h-5"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">Reportes de Usuarios</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Fomentamos una comunidad segura donde los usuarios pueden y deben reportar cualquier comportamiento o contenido inapropiado directamente <strong>dentro de la aplicación</strong>. Nuestro equipo de moderación revisa todos los reportes de forma diligente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 border-b border-gray-100">
+                <div class="flex gap-4">
+                    <span class="flex-shrink-0 w-8 h-8 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center">
+                        <i data-lucide="gavel" class="w-5 h-5"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-xl font-bold mb-4">Colaboración con Autoridades</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Colaboramos activamente con las autoridades competentes. En Chile, esto incluye reportar cualquier evidencia de actividad ilegal al <strong>Ministerio Público</strong> y otras agencias relevantes para asegurar que se tomen las acciones correspondientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 mb-4">Para reportes urgentes o si tienes dudas, contáctanos.</p>
+            <a href="mailto:contacto@datefriendly.com" class="inline-flex items-center gap-2 text-rose-500 font-semibold hover:underline">
+                <i data-lucide="mail" class="w-5 h-5"></i> contacto@datefriendly.com
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-xs">© 2025 DateFriendly SpA. La seguridad es nuestra prioridad.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
